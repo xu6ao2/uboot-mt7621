@@ -15,7 +15,7 @@ on:
         description: 'MTD Partition Table'
         required: true
         type: string
-        default: '512k(u-boot),256k(config),256k(configdata),512k(factory),-(firmware)'
+        default: '512k(u-boot),256k(u-boot-env),256k(configdata),512k(factory),-(firmware)'
       kernel_offset:
         description: 'Kernel Load Address'
         required: true
@@ -25,7 +25,7 @@ on:
         description: 'Reset Button GPIO'
         required: true
         type: number
-        default: 18
+        default: 17
       sysled_pin:
         description: 'System LED GPIO'
         required: true
